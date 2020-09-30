@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  display: flex;
+  height: auto;
+  padding: 10px 0px;
+  margin-left: 3rem;
+  align-items: center;
+  border-bottom: 2px solid black;
+  width: 95%;
+}
+.nav-links,
+.title-container,
+.title {
+  display: flex;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 25px;
+  margin: 5px;
+  padding: 0px 0px 0px 15px;
+  align-items: center;
+  flex: 1;
+}
+
+.title-container {
+  position: relative;
+  flex: 1.5;
+}
+.subtitle {
+  position: absolute;
+  left: 95px;
+  top: 75%;
+  align-items: center;
+  font-weight: 600;
+  flex: 1;
+}
+
+nav {
+  flex: 1;
+}
+.nav-links {
+  justify-content: space-around;
+  list-style: none;
+}
+.nav-link {
+  font-size: 19px;
+  text-decoration: none;
+  border-bottom: solid transparent;
+}
+
+.nav-link:hover {
+  color: maroon;
+  border-image: linear-gradient(to right, white 10%, maroon, white 90%);
+  border-image-slice: 1;
+}
+
+.page-head {
+  margin: 30px 3rem;
+  font-size: 30px;
+  padding: 0px 0px 7px 0px;
+  border-bottom: 3px solid;
+  border-image: linear-gradient(to left, white 68%, lightblue 82%);
+  border-image-slice: 1;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-left: 2.7rem;
+}
+.column {
+  max-width: 33%;
+  padding: 0 4px;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.hotels {
+  margin-top: 4vh;
+  margin-left: 2.7rem;
+}
+
+.hotels div a img {
+  float: left;
+  object-fit: cover;
+  width: 100%;
+  margin: 10px 0px;
+}
+
+footer h4 {
+  margin-left: 2.8rem;
+  padding: 20px 0;
+  color: black;
+  
+}
+
+footer a {
+  text-decoration: none;
+  width: 20%;
+}
+
+@media screen and (max-width: 1000px) {
+  .column {
+    flex: 50%;
+    max-width: 80%;
+  }
+  nav {
+    flex: 50%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  header {
+    height: auto;
+    display: block;
+    font-size: 12px;
+    width: 85%;
+  }
+
+  .nav-links {
+    padding-top: 10px;
+  }
+  .title-container {
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .nav-links {
+    display: inline;
+  }
+  nav {
+    padding: 10px 0;
+  }
+
+  .row {
+    margin-top: 10px;
+  }
+}
