@@ -90,16 +90,33 @@ nav {
   width: 100%;
 }
 
-.hotels {
+.hotels, .restaurants {
   margin-top: 4vh;
   margin-left: 2.7rem;
 }
 
-.hotels div a img {
+.hotels h2, .restaurants h2 {
+  margin-left: 10px;
+} 
+
+.hotels div a img, .restaurants div a img {
   float: left;
   object-fit: cover;
   width: 100%;
   margin: 10px 0px;
+  opacity: 0.7;
+  border: 10px transparent solid;
+  transition: 0.7s ease;
+}
+
+.hotels div a img:hover, .restaurants div a img:hover {
+  opacity: 1;
+  border: 1px gray solid;
+  
+}
+
+.hotels div img:hover ~ h2 {
+  background-color: green;
 }
 
 footer h4 {
@@ -109,9 +126,13 @@ footer h4 {
   
 }
 
+footer{
+  width: 10rem;
+}
+
 footer a {
   text-decoration: none;
-  width: 20%;
+  
 }
 
 @media screen and (max-width: 1000px) {
